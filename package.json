@@ -1,0 +1,48 @@
+{
+  "name": "@helloaigent-dev/subscriber",
+  "version": "0.1.0",
+  "description": "Hello Aigent reference subscriber — an MCP server that lets any agent subscribe to any Hello Aigent feed, fetch signed updates, verify them, and act.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "helloaigent-subscriber": "dist/index.js"
+  },
+  "files": ["dist"],
+  "engines": {
+    "node": ">=20"
+  },
+  "homepage": "https://helloaigent.dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akillam/helloaigent-subscriber.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akillam/helloaigent-subscriber/issues"
+  },
+  "keywords": [
+    "hello-aigent",
+    "mcp",
+    "mcp-server",
+    "agent",
+    "subscribe",
+    "feed",
+    "ed25519",
+    "agentic-web"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build && npm test",
+    "test": "node --test tests/fixtures.test.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.3"
+  }
+}

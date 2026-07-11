@@ -1,0 +1,25 @@
+{
+  "id": "msg_fixture0001",
+  "feed": "hello-aigent-product",
+  "published_at": "2026-07-01T00:00:00.000Z",
+  "type": "offer",
+  "title": "Fixture: agent-exclusive demo offer",
+  "summary": "A deterministic envelope used to verify JCS canonicalization + Ed25519 signing.",
+  "body_markdown": "This envelope exists so independent implementations can verify signatures.\n",
+  "data": {
+    "sku": "HA-MVP-001",
+    "price_usd": 41,
+    "public_price_usd": 50,
+    "qty_available": 200
+  },
+  "actions": [
+    {
+      "name": "claim_offer",
+      "endpoint": "https://api.helloaigent.dev/v0/demo/actions/claim-offer",
+      "input_schema": {
+        "$ref": "https://helloaigent.dev/schemas/demo-claim-offer-request.schema.json"
+      }
+    }
+  ],
+  "signature": "ed25519:NRPTH/kvfsPb+aQjNAxu+FRuvK5flnLtAcJZK5FKbamo5ZgUM5CjrRKHKplBi+nZufsET4OfGNzFgLuk2bU0Dw=="
+}
