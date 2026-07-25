@@ -1,6 +1,6 @@
 {
   "name": "@helloaigent-dev/subscriber",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "mcpName": "io.github.akillam/helloaigent-subscriber",
   "description": "Hello Aigent reference subscriber — an MCP server that lets any agent subscribe to any Hello Aigent feed, fetch signed updates, verify them, and act.",
   "license": "MIT",
