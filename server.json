@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.akillam/helloaigent-subscriber",
-  "description": "Subscribe your agent to any Hello Aigent feed: discover feeds via /.well-known/hello-aigent.json, fetch signed updates, verify Ed25519 signatures, and act on them with consent.",
+  "description": "Subscribe your agent to Hello Aigent feeds: discover, fetch signed updates, verify, and act.",
   "repository": {
     "url": "https://github.com/akillam/helloaigent-subscriber",
     "source": "github"
