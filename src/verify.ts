@@ -1,7 +1,7 @@
 // Independent envelope verification for the reference subscriber.
 // Deliberately does NOT share code with the Hello Aigent server: this package
 // re-implements RFC 8785 JCS canonicalization + Ed25519 verification so it
-// independently checks what publishers actually serve against the published spec.
+// independently checks what publishers actually serve.
 
 export function jcsCanonicalize(value: unknown): string {
   if (value === undefined) throw new Error('cannot canonicalize undefined');

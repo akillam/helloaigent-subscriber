@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.akillam/helloaigent-subscriber",
+  "description": "Subscribe your agent to any Hello Aigent feed: discover feeds via /.well-known/hello-aigent.json, fetch signed updates, verify Ed25519 signatures, and act on them with consent.",
+  "repository": {
+    "url": "https://github.com/akillam/helloaigent-subscriber",
+    "source": "github"
+  },
+  "version": "0.1.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@helloaigent-dev/subscriber",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "HELLO_AIGENT_STATE",
+          "description": "Path to the local subscription-state file (optional; defaults to a per-user location)",
+          "isRequired": false,
+          "isSecret": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
